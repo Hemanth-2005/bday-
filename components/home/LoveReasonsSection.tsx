@@ -1,18 +1,20 @@
 'use client'
 
-import { motion, MotionValue, useScroll, useTransform } from 'framer-motion'
-import { useRef } from 'react'
+import { AnimatePresence, motion, useMotionValueEvent, useScroll, useTransform } from 'framer-motion'
+import { useMemo, useRef, useState } from 'react'
 
 import { useSiteContent } from '@/components/providers/SiteContentProvider'
 import { useIsMobile } from '@/hooks/useViewportInfo'
 import { getMediaUrl } from '@/lib/media'
 
+function clamp(value: number, min: number, max: number) {
+  return Math.min(Math.max(value, min), max)
+}
+
 function ReasonSlide({
   reason,
-  index,
-  total,
-  progress,
   isMobile,
+  slideProgress,
 }: {
   reason: {
     title: string
@@ -20,27 +22,21 @@ function ReasonSlide({
     description: string
     image: { src?: string; publicId?: string; alt: string }
   }
-  index: number
-  total: number
-  progress: MotionValue<number>
   isMobile: boolean
+  slideProgress: number
 }) {
-  const step = 1 / total
-  const start = index * step
-  const enter = index === 0 ? 0 : Math.max(start - step * 0.04, 0)
-  const fadeIn = index === 0 ? Math.min(start + step * 0.08, 1) : Math.min(start + step * 0.16, 1)
-  const hold = Math.min(start + step * 0.82, 1)
-  const end = Math.min(start + step * 0.94, 1)
-  const opacityStops = index === 0 ? [1, 1, 1, 0] : [0, 1, 1, 0]
-
-  const opacity = useTransform(progress, [enter, fadeIn, hold, end], opacityStops)
-  const imageScale = useTransform(progress, [enter, end], [isMobile ? 1.08 : 1.18, 1])
-  const imageY = useTransform(progress, [enter, end], [isMobile ? '3vh' : '7vh', isMobile ? '-1vh' : '-4vh'])
-  const textY = useTransform(progress, [enter, fadeIn, hold, end], [isMobile ? '5vh' : '8vh', '0vh', '0vh', isMobile ? '-4vh' : '-8vh'])
-  const textOpacity = useTransform(progress, [enter, fadeIn, hold, end], opacityStops)
+  const imageScale = (isMobile ? 1.08 : 1.18) - slideProgress * (isMobile ? 0.08 : 0.18)
+  const imageY = `${(isMobile ? 3 : 7) - slideProgress * (isMobile ? 4 : 11)}vh`
+  const textY = `${(1 - slideProgress) * (isMobile ? 2.8 : 4.4)}vh`
 
   return (
-    <motion.article style={{ opacity }} className="absolute inset-0">
+    <motion.article
+      className="absolute inset-0"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.45, ease: 'easeOut' }}
+    >
       <motion.div style={{ scale: imageScale, y: imageY }} className="absolute inset-0">
         <img
           src={getMediaUrl(reason.image)}
@@ -51,8 +47,12 @@ function ReasonSlide({
       </motion.div>
 
       <motion.div
-        style={{ opacity: textOpacity, y: textY }}
+        style={{ y: textY }}
         className="absolute inset-0 z-20 flex w-full items-end px-5 pb-14 sm:px-8 sm:pb-16 lg:inset-y-0 lg:left-0 lg:items-center lg:px-16 lg:pb-0"
+        initial={{ opacity: 0, y: 18 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -12 }}
+        transition={{ duration: 0.42, ease: 'easeOut' }}
       >
         <div className="max-w-[19rem] sm:max-w-[24rem] lg:max-w-xl">
           <p className="text-[0.72rem] uppercase tracking-[0.34em] text-[#ffc6d3]">
@@ -74,23 +74,16 @@ function ReasonSlide({
 }
 
 function ReasonDot({
-  index,
-  total,
-  progress,
+  active,
 }: {
-  index: number
-  total: number
-  progress: MotionValue<number>
+  active: boolean
 }) {
-  const step = 1 / total
-  const start = index * step
-  const middle = start + step * 0.5
-  const end = start + step
-  const opacity = useTransform(progress, [start, middle, end], [0.28, 1, 0.28])
-  const scale = useTransform(progress, [start, middle, end], [1, 1.35, 1])
-
   return (
-    <motion.div style={{ opacity, scale }} className="h-2 w-2 rounded-full bg-[#ffd0da]" />
+    <motion.div
+      animate={{ opacity: active ? 1 : 0.28, scale: active ? 1.35 : 1 }}
+      transition={{ duration: 0.28, ease: 'easeOut' }}
+      className="h-2 w-2 rounded-full bg-[#ffd0da]"
+    />
   )
 }
 
@@ -98,12 +91,27 @@ export default function LoveReasonsSection() {
   const { loveReasons } = useSiteContent()
   const isMobile = useIsMobile()
   const sectionRef = useRef<HTMLElement>(null)
+  const [sectionProgress, setSectionProgress] = useState(0)
   const { scrollYProgress } = useScroll({
     target: sectionRef,
     offset: ['start start', 'end end'],
   })
 
   const headerOpacity = useTransform(scrollYProgress, [0, 0.08, 0.15], [1, 1, 0])
+  const totalReasons = Math.max(loveReasons.length, 1)
+  const step = 1 / totalReasons
+
+  useMotionValueEvent(scrollYProgress, 'change', (latest) => {
+    setSectionProgress(latest)
+  })
+
+  const activeIndex = useMemo(
+    () => clamp(Math.floor(sectionProgress * totalReasons), 0, totalReasons - 1),
+    [sectionProgress, totalReasons]
+  )
+  const activeReason = loveReasons[activeIndex]
+  const activeStepStart = activeIndex * step
+  const slideProgress = clamp((sectionProgress - activeStepStart) / step, 0, 1)
 
   return (
     <section ref={sectionRef} className="relative h-[520svh] sm:h-[560svh] lg:h-[600vh]">
@@ -117,25 +125,23 @@ export default function LoveReasonsSection() {
           </p>
         </motion.div>
 
-        {loveReasons.map((reason, index) => (
-          <ReasonSlide
-            key={`${reason.title}-${getMediaUrl(reason.image)}`}
-            reason={reason}
-            index={index}
-            total={loveReasons.length}
-            progress={scrollYProgress}
-            isMobile={isMobile}
-          />
-        ))}
+        <AnimatePresence mode="wait">
+          {activeReason ? (
+            <ReasonSlide
+              key={`${activeReason.title}-${getMediaUrl(activeReason.image)}`}
+              reason={activeReason}
+              slideProgress={slideProgress}
+              isMobile={isMobile}
+            />
+          ) : null}
+        </AnimatePresence>
 
         <div className="pointer-events-none absolute inset-y-0 right-6 z-30 hidden items-center lg:flex">
           <div className="space-y-3">
             {loveReasons.map((reason, index) => (
               <ReasonDot
                 key={reason.title}
-                index={index}
-                total={loveReasons.length}
-                progress={scrollYProgress}
+                active={index === activeIndex}
               />
             ))}
           </div>
