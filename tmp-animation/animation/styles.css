@@ -1,0 +1,157 @@
+/* Reset and base styles */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    background: #050505;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Canvas container - fixed full screen */
+#canvas-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* Canvas element styling */
+#canvas-container canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* Scroll spacer - creates scrollable area */
+#scroll-spacer {
+    position: relative;
+    height: 400vh; /* 4x viewport height for scroll animation */
+    z-index: 2;
+}
+
+/* UI overlay - positioned over the canvas */
+#ui-overlay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 10;
+    pointer-events: none;
+    color: #ffffff;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+#ui-overlay h1 {
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+#ui-overlay p {
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
+    font-weight: 300;
+    opacity: 0.7;
+    letter-spacing: 0.05em;
+}
+
+/* Upload Section */
+#upload-section {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border: 2px dashed rgba(255,255,255,0.3);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    pointer-events: auto; /* Enable clicks on upload section */
+}
+
+#upload-section:hover,
+#upload-section.dragover {
+    border-color: #e94560;
+    background: rgba(233, 69, 96, 0.1);
+}
+
+#upload-btn {
+    background: linear-gradient(135deg, #e94560, #0f3460);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: inherit;
+    letter-spacing: 0.05em;
+    position: relative;
+    z-index: 100;
+    pointer-events: auto;
+}
+
+#upload-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(233, 69, 96, 0.3);
+}
+
+.upload-hint {
+    margin-top: 0.8rem;
+    font-size: 0.85rem !important;
+    opacity: 0.5 !important;
+}
+
+/* Hide UI when scrolled */
+#ui-overlay.hidden {
+    opacity: 0;
+}
+
+/* Loading state */
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #050505;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    color: #ffffff;
+    font-size: 1.2rem;
+    letter-spacing: 0.1em;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.loading.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #scroll-spacer {
+        height: 300vh;
+    }
+    
+    #ui-overlay h1 {
+        font-size: 1.8rem;
+    }
+    
+    #ui-overlay p {
+        font-size: 0.9rem;
+        padding: 0 2rem;
+    }
+}

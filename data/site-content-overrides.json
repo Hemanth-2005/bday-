@@ -1,0 +1,378 @@
+{
+  "heroImages": [
+    {
+      "src": "/images/whylove/1.jpg",
+      "alt": "Portrait detail for the hero section",
+      "caption": "The kind of face that makes time slow down."
+    },
+    {
+      "src": "/images/memories/2.jpg",
+      "alt": "Dreamy memory card image",
+      "caption": "Even ordinary days feel cinematic with you in them."
+    },
+    {
+      "src": "/images/whylove/4.jpg",
+      "alt": "Soft portrait for editorial stack",
+      "caption": "You make calm look beautiful."
+    }
+  ],
+  "heroPixelSectionContent": {
+    "eyebrow": "Happy birthday, papu",
+    "title": "Some stories do not arrive loudly. They begin softly, and then become everything.\n\n",
+    "body": "It starts quietly, right in the center, like the first thing I wanted you to see. Then as you scroll, the words drift aside and the scattered pixels come together, because that is exactly what you did to my life too.\n\n",
+    "hint": "Scroll slowly. This story was never meant to be rushed.",
+    "image": {
+      "src": "https://res.cloudinary.com/dflpsk7pi/image/upload/v1777007869/IMG-20260322-WA0000-removebg-preview_jliww7.png",
+      "alt": "Romantic portrait for the opening particle reveal"
+    }
+  },
+  "memoryGalleryImages": [
+    {
+      "src": "https://res.cloudinary.com/dflpsk7pi/image/upload/v1777020629/WhatsApp_Image_2026-04-23_at_11.43.27_PM_blcesp.jpg",
+      "alt": "Shared memory one",
+      "caption": "The first frame I always come back to.",
+      "note": "It still feels warm in my head, like the room kept a little of your light after we left."
+    },
+    {
+      "src": "https://res.cloudinary.com/dflpsk7pi/image/upload/v1777010835/Snapchat-2024306948_dakz0h.jpg",
+      "alt": "Shared memory two",
+      "caption": "A quiet moment that still glows.",
+      "note": "Some memories are loud. This one is soft, and somehow that makes it stay longer."
+    },
+    {
+      "src": "https://res.cloudinary.com/dflpsk7pi/image/upload/v1777010831/Snapchat-1845329938_k655ng.jpg",
+      "alt": "Shared memory three",
+      "caption": "Proof that your presence changes the mood of a room.",
+      "note": "You have this way of making ordinary places feel chosen, like they matter just because you were there."
+    },
+    {
+      "src": "https://res.cloudinary.com/dflpsk7pi/image/upload/v1777010831/Snapchat-1845329938_k655ng.jpg",
+      "alt": "Shared memory four",
+      "caption": "The kind of memory that keeps replaying on its own.",
+      "note": "Not because something huge happened, but because being with you made even the small parts unforgettable."
+    },
+    {
+      "src": "https://res.cloudinary.com/dflpsk7pi/image/upload/v1777010817/Snapchat-1175857584_w25spu.jpg",
+      "alt": "Shared memory five",
+      "caption": "Soft, vivid, and impossible to forget.",
+      "note": "This is the sort of moment I would keep even if I had to give back everything else."
+    },
+    {
+      "src": "https://res.cloudinary.com/dflpsk7pi/image/upload/v1777010818/Snapchat-1229817956_ywh4d7.jpg",
+      "alt": "Shared memory six",
+      "caption": "A moment that made everything feel more real.",
+      "note": "The kind of second that quietly changes the shape of the whole day around it."
+    },
+    {
+      "src": "https://res.cloudinary.com/dflpsk7pi/image/upload/v1777022465/WhatsApp_Image_2026-04-23_at_11.48.07_PM_1_nbiza7.jpg",
+      "alt": "Portrait memory seven",
+      "caption": "The smile that made my whole day reset.",
+      "note": "You smiled, and suddenly every other thought felt less important than staying in that moment."
+    },
+    {
+      "src": "https://res.cloudinary.com/dflpsk7pi/image/upload/v1777020643/WhatsApp_Image_2026-04-23_at_11.45.32_PM_zze5qb.jpg",
+      "alt": "Portrait memory eight",
+      "caption": "Still one of my favorite views in the world.",
+      "note": "Some people become a place inside you. That is what these memories feel like now."
+    },
+    {
+      "src": "https://res.cloudinary.com/dflpsk7pi/image/upload/v1777020643/WhatsApp_Image_2026-04-23_at_11.45.32_PM_zze5qb.jpg",
+      "alt": "Shared memory nine",
+      "caption": "The softness was always there, even in the earliest frames.",
+      "note": "Some photos feel less like old pictures and more like proof that sweetness was always part of you."
+    },
+    {
+      "src": "https://res.cloudinary.com/dflpsk7pi/image/upload/v1777010793/Snapchat-33095928_mrfmsk.jpg",
+      "alt": "Shared memory ten",
+      "caption": "An older chapter that still feels quietly alive.",
+      "note": "Looking back at this one feels like finding the beginning of something beautiful long before I knew it."
+    },
+    {
+      "src": "https://res.cloudinary.com/dflpsk7pi/image/upload/v1777010795/Snapchat-50091612_d010ex.jpg",
+      "alt": "Shared memory eleven",
+      "caption": "A little version of you that still melts my heart.",
+      "note": "There is something precious about seeing how innocence and warmth were already written into you so early."
+    },
+    {
+      "src": "https://res.cloudinary.com/dflpsk7pi/image/upload/v1777022446/WhatsApp_Image_2026-04-23_at_11.48.04_PM_1_pjgt4x.jpg",
+      "alt": "Shared memory twelve",
+      "caption": "The kind of frame that makes time feel gentle.",
+      "note": "This is the sort of memory that does not need noise. It stays simply because it feels pure."
+    },
+    {
+      "src": "https://res.cloudinary.com/dflpsk7pi/image/upload/v1777022433/WhatsApp_Image_2026-04-23_at_11.48.01_PM_1_idsetx.jpg",
+      "alt": "Shared memory thirteen",
+      "caption": "The look that always manages to stay with me.",
+      "note": "Some expressions pass in a second, but yours have a strange way of staying in my thoughts for much longer."
+    },
+    {
+      "src": "https://res.cloudinary.com/dflpsk7pi/image/upload/q_auto/f_auto/v1777022415/WhatsApp_Image_2026-04-23_at_11.47.56_PM_1_mlbthh.jpg",
+      "alt": "Shared memory fourteen",
+      "caption": "A frame full of your playful little magic.",
+      "note": "Even in stillness, there is something lively about you that makes the whole moment feel awake."
+    },
+    {
+      "src": "https://res.cloudinary.com/dflpsk7pi/image/upload/q_auto/f_auto/v1777022415/WhatsApp_Image_2026-04-23_at_11.47.56_PM_1_mlbthh.jpg",
+      "alt": "Shared memory fifteen",
+      "caption": "One more reason these memories never really leave me.",
+      "note": "The more I look through these moments, the more they feel less like the past and more like a part of me now."
+    }
+  ],
+  "memoriesSectionContent": {
+    "eyebrow": "Our memories",
+    "title": "A whole section just for the moments that still replay in my chest.",
+    "intro": "I kept this one separate on purpose. It deserves its own atmosphere, its own pace, and its own kind of softness.",
+    "body": "This gallery is meant to feel like flipping through memories that never really went away. The motion is dreamy, the colors stay inside the same romantic palette, and every image can be replaced from one file whenever you want.",
+    "aside": "Right now these are dummy images, but the structure is ready for your real photos or Cloudinary public IDs whenever you want to swap them in.",
+    "lines": [
+      "A random meeting, but somehow it changed everything.",
+      "From study talks to smiles I started waiting for.",
+      "You asked for my number, and maybe that was where fate quietly smiled.",
+      "Those formal conversations never knew they would become this close.",
+      "The same PG, the same days, and slowly the same comfort.",
+      "Late-night calls made the distance between two hearts disappear.",
+      "Every outing with you became a memory I still replay.",
+      "Love came softly, but once it came, it felt like home."
+    ]
+  },
+  "journeyImages": [
+    {
+      "src": "https://res.cloudinary.com/dflpsk7pi/image/upload/q_auto/f_auto/v1777010747/IMG-20210924-WA0009_jhch6i.jpg",
+      "alt": "Journey image one"
+    },
+    {
+      "src": "https://res.cloudinary.com/dflpsk7pi/image/upload/q_auto/f_auto/v1777010749/IMG-20230916-WA0030_k1ken7.jpg",
+      "alt": "Journey image two"
+    },
+    {
+      "src": "https://res.cloudinary.com/dflpsk7pi/image/upload/q_auto/f_auto/v1777010746/IMG-20210923-WA0006_x4njw1.jpg",
+      "alt": "Journey image three"
+    },
+    {
+      "src": "https://res.cloudinary.com/dflpsk7pi/image/upload/q_auto/f_auto/v1777009947/WhatsApp_Image_2026-04-18_at_10.18.01_PM_wngdxm.jpg",
+      "alt": "Journey image four"
+    },
+    {
+      "src": "https://res.cloudinary.com/dflpsk7pi/image/upload/q_auto/f_auto/v1777009947/WhatsApp_Image_2026-04-18_at_10.18.01_PM_1_zfeiez.jpg",
+      "alt": "Journey image five"
+    },
+    {
+      "src": "https://res.cloudinary.com/dflpsk7pi/image/upload/q_auto/f_auto/v1777009946/WhatsApp_Image_2026-04-18_at_10.17.58_PM_1_wezbdb.jpg",
+      "alt": "Journey image six"
+    },
+    {
+      "src": "https://res.cloudinary.com/dflpsk7pi/image/upload/q_auto/f_auto/v1777009945/WhatsApp_Image_2026-04-18_at_10.18.02_PM_1_uuvmdg.jpg",
+      "alt": "Journey image seven"
+    },
+    {
+      "src": "https://res.cloudinary.com/dflpsk7pi/image/upload/q_auto/f_auto/v1777009945/WhatsApp_Image_2026-04-18_at_10.17.56_PM_jrzhj3.jpg",
+      "alt": "Journey image eight"
+    },
+    {
+      "src": "https://res.cloudinary.com/dflpsk7pi/image/upload/q_auto/f_auto/v1777009945/WhatsApp_Image_2026-04-18_at_10.17.56_PM_2_ntboub.jpg",
+      "alt": "Journey image nine"
+    },
+    {
+      "src": "https://res.cloudinary.com/dflpsk7pi/image/upload/q_auto/f_auto/v1777009947/WhatsApp_Image_2026-04-18_at_10.18.00_PM_2_xwclzp.jpg",
+      "alt": "Journey image ten"
+    },
+    {
+      "src": "https://res.cloudinary.com/dflpsk7pi/image/upload/q_auto/f_auto/v1777010743/IMG_20221026_220337_zu9dns.jpg",
+      "alt": "Journey image eleven"
+    },
+    {
+      "src": "https://res.cloudinary.com/dflpsk7pi/image/upload/q_auto/f_auto/v1777010746/IMG-20210923-WA0004_ykeyrl.jpg",
+      "alt": "Journey image twelve"
+    },
+    {
+      "src": "https://res.cloudinary.com/dflpsk7pi/image/upload/q_auto/f_auto/v1777010750/Snapchat-270292966_yabveu.jpg",
+      "alt": "Journey image thirteen"
+    },
+    {
+      "src": "https://res.cloudinary.com/dflpsk7pi/image/upload/q_auto/f_auto/v1777010751/Snapchat-1300223471_quy6q7.jpg",
+      "alt": "Journey image fourteen"
+    },
+    {
+      "src": "https://res.cloudinary.com/dflpsk7pi/image/upload/q_auto/f_auto/v1777010753/Snapchat-1941787985_qtgriw.jpg",
+      "alt": "Journey image fifteen"
+    }
+  ],
+  "relationshipMilestones": [
+    {
+      "label": "Childhood",
+      "title": "Silent, innocent, and already special.",
+      "description": "As a little girl, you were quiet, innocent, and full of a sweet kind of cleverness. You were not the loud kind of shine, you were the soft kind that people slowly notice and never forget.\n\n"
+    },
+    {
+      "label": "Growing Up",
+      "title": "You kept collecting the best from every stage of life.",
+      "description": "In childhood, you pulled the highest marks in almost every subject, as if excellence had already chosen you. You grew up carrying that same brilliance with grace, sincerity, and a heart that stayed soft no matter how much you achieved.\n\n"
+    },
+    {
+      "label": "Becoming You",
+      "title": "Beauty, innocence, and strength all in one soul.",
+      "description": "As you grew, you did not just become more beautiful, you became more graceful, more understanding, and even more precious. The lovely thing about you is that your outer beauty is only one part of what makes you so unforgettable.\n\n"
+    }
+  ],
+  "journeySectionContent": {
+    "eyebrow": "Your journey",
+    "title": "Some beauties are created slowly, but on the day Saniya was born, the world received one all at once.\n\n",
+    "intro": "Sometimes I really feel thankful to your parents for bringing someone like you into this world. You are pretty, beautiful, innocent, and full of a softness that is very rare. There are many ways to describe beauty, but honestly, you feel beyond all of them.\n\n",
+    "closing": "No camera, no photo, and no eyes can fully capture your real beauty, because the most beautiful part of you is not only how you look, it is also how you are."
+  },
+  "colorRevealSectionContent": {
+    "eyebrow": "Before you",
+    "title": "Before you, everything looked complete. It just did not feel alive.",
+    "body": "Before you came into my life, the world moved the way it always does. Days opened and closed, people passed by, work filled the hours, and everything looked normal from the outside. But somewhere inside, it all felt quiet, distant, almost colorless, like life was happening in shades instead of feeling.",
+    "bodyTwo": "Then you arrived, and without noise, everything began to glow differently. The same days softened, the same moments became warmer, and the same world started carrying color I had never noticed before. You did not just enter my life, Saniya. You turned it from something I was living into something I could finally feel.",
+    "image": {
+      "src": "https://res.cloudinary.com/dflpsk7pi/image/upload/q_auto/f_auto/v1777022512/WhatsApp_Image_2026-04-23_at_11.48.23_PM_1_vdaoby.jpg",
+      "alt": "Color reveal portrait"
+    }
+  },
+  "loveReasons": [
+    {
+      "title": "Your eyes",
+      "subtitle": "The first thing that quietly makes everything else disappear.",
+      "description": "Her eyes feel like home to me, quiet, warm, and the one place I never get tired of getting lost in. When she looks at me, the whole world fades into the background, and suddenly that one moment becomes enough for my heart.\n\n",
+      "image": {
+        "src": "https://res.cloudinary.com/dflpsk7pi/image/upload/q_auto/f_auto/v1777010820/Snapchat-1291646343_qdhfbn.jpg",
+        "alt": "Eyes portrait detail"
+      }
+    },
+    {
+      "title": "Your smile",
+      "subtitle": "The version of joy that never needs an explanation.",
+      "description": "Her smile makes me forget my anger, my stress, my tension, and everything that weighs on me. The moment that soft smile appears, the whole world goes quiet, and I just melt into it like nothing else ever mattered.\n\n",
+      "image": {
+        "src": "https://res.cloudinary.com/dflpsk7pi/image/upload/q_auto/f_auto/v1777010821/Snapchat-1314879185_xcobve.jpg",
+        "alt": "Smiling portrait detail"
+      }
+    },
+    {
+      "title": "Your anger",
+      "subtitle": "Even your storms feel real in a way I cannot ignore.",
+      "description": "Even when she is angry, she is impossible not to adore. Her little frowns, those spark-filled eyes, and the way she tries to stay serious only make her look even more precious, like a tiny storm that was made to be loved, not feared.\n\n",
+      "image": {
+        "src": "https://res.cloudinary.com/dflpsk7pi/image/upload/q_auto/f_auto/v1777026050/Pi7_image_upjixi.png",
+        "alt": "Looks portrait detail"
+      }
+    },
+    {
+      "title": "Your looks",
+      "subtitle": "Even your storms feel real in a way I cannot ignore.",
+      "description": "There is something about the way she looks that stays with me long after the moment is gone. It is not just beauty, it is the softness, the grace, and the kind of presence that makes it impossible to look away.\n\n",
+      "image": {
+        "src": "https://res.cloudinary.com/dflpsk7pi/image/upload/v1777010748/IMG-20230422-WA0048_thphc1.jpg",
+        "alt": "Anger portrait detail"
+      }
+    },
+    {
+      "title": "Your childishness",
+      "subtitle": "The playful little chaos that makes being around you unforgettable.",
+      "description": "When she is with me, there is a little girl in her that comes alive, playful, carefree, and full of wonder. In those moments, her laughter feels pure, her happiness feels simple, and my heart falls for her in the softest way all over again.\n\n",
+      "image": {
+        "src": "https://res.cloudinary.com/dflpsk7pi/image/upload/q_auto/f_auto/v1777026045/Pi7_image_1_ikpmtw.png",
+        "alt": "Funny portrait detail"
+      }
+    }
+  ],
+  "specialWishEntries": [
+    {
+      "id": "wish-1",
+      "clue": "This is from the friend who has known you since your tiny school days and has always supported you like her own.\n\n",
+      "prompt": "Who could this childhood friend be?",
+      "answers": [
+        "Varsha"
+      ],
+      "mediaSrc": "https://res.cloudinary.com/dflpsk7pi/video/upload/v1777010848/varsha_e6ywjl.mp4",
+      "mediaType": "video"
+    },
+    {
+      "id": "wish-2",
+      "clue": "The don't-care vibe was always strong, but so was the support, the listening, and the quiet care that made this clg bond special.",
+      "prompt": "Type the name to unlock the next wish.",
+      "answers": [
+        "Shashank"
+      ],
+      "mediaSrc": "https://res.cloudinary.com/dflpsk7pi/video/upload/v1777011368/shashank_1_sfy7yx.mp4",
+      "mediaType": "video"
+    },
+    {
+      "id": "wish-3",
+      "clue": "A bold old-circle bond, full of baddie energy, straight-forward words, and a perfect partner in fun and crime.",
+      "prompt": "Who do you think sent this?",
+      "answers": [
+        "Pradnya"
+      ],
+      "mediaSrc": "https://res.cloudinary.com/dflpsk7pi/video/upload/v1777010847/pradnya_yxh5qt.mp4",
+      "mediaType": "video"
+    },
+    {
+      "id": "wish-4",
+      "clue": "A childhood friend from St. Joseph School, with the kind of memories that never fade, from those days when friendship was felt long before it was ever understood… ",
+      "prompt": "Guess the friend to continue.",
+      "answers": [
+        "Ayesha"
+      ],
+      "mediaSrc": "https://res.cloudinary.com/dflpsk7pi/video/upload/v1777010845/ayesha_wibta8.mp4",
+      "mediaType": "video"
+    },
+    {
+      "id": "wish-5",
+      "clue": "One of your old friendships from that trio, a bond filled with its own memories and moments… and the name begins with K",
+      "prompt": "Enter the right name to reveal the wish.",
+      "answers": [
+        "Krutartha"
+      ],
+      "mediaSrc": "https://res.cloudinary.com/dflpsk7pi/video/upload/v1777011744/unkown_f7lnwk.mp4",
+      "mediaType": "video"
+    },
+    {
+      "id": "wish-6",
+      "clue": "An old close bond that still stays near in distance and in heart, even if busy days do not let the conversations happen as often now.",
+      "prompt": "Who is behind this one?",
+      "answers": [
+        "Pushpa"
+      ],
+      "mediaSrc": "https://res.cloudinary.com/dflpsk7pi/video/upload/v1777011730/pushpa_kqnz6o.mp3",
+      "mediaType": "audio"
+    },
+    {
+      "id": "wish-7",
+      "clue": "A high school teacher who always admired the brave, brilliant topper in you, and held a special kind of love and belief for that student.",
+      "prompt": "One last guess.",
+      "answers": [
+        "Vijaylaxmi mam"
+      ],
+      "mediaSrc": "https://res.cloudinary.com/dflpsk7pi/video/upload/v1777010846/vijaylaxmi_mam_pbolly.mp4",
+      "mediaType": "video"
+    }
+  ],
+  "specialWishesSectionContent": {
+    "eyebrow": "Some wishes from special persons",
+    "title": "Seven little guesses, seven voices waiting for you.",
+    "completedTitle": "Every special person got their moment.",
+    "completedBody": "That was the last one. A full little chain of voices just for her."
+  },
+  "closingLines": [
+    "You have this rare way of making life feel more detailed.",
+    "More golden. More memorable. More worth pausing for.",
+    "This page is only a small attempt at saying what you actually deserve to hear in person.",
+    "You are loved deeply, admired endlessly, and thought about far more often than I know how to summarize."
+  ],
+  "letterSectionContent": {
+    "eyebrow": "Final note",
+    "title": "A softer ending feels stronger than a loud one here.",
+    "personalizationTitle": "Personalization pass",
+    "personalizationBody": "I kept the writing romantic and polished, but still generic enough to be safe as a first pass. Once you answer a few personal questions, I can turn this into something that feels unmistakably hers."
+  },
+  "finalSectionContent": {
+    "eyebrow": "Ready for next pass",
+    "title": "Better structure, smoother scroll, and sections that finally feel connected.",
+    "tags": [
+      "Romantic editorial direction",
+      "Replaceable photos and Cloudinary support"
+    ]
+  }
+}
